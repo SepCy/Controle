@@ -32,6 +32,45 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField7">
     </Component>
+    <Component class="javax.swing.JRadioButton" name="masc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" M"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mascMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mascActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="fem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="F"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jRadioButton2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup3">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup4">
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jRadioButton3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jRadioButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup5">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -68,18 +107,20 @@
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="nom" max="32767" attributes="0"/>
-                  <Component id="matricule" alignment="0" max="32767" attributes="0"/>
-                  <Component id="prenom" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="masc" min="-2" pref="41" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="fem" min="-2" pref="54" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="nom" max="32767" attributes="0"/>
+                      <Component id="matricule" alignment="0" max="32767" attributes="0"/>
+                      <Component id="prenom" alignment="0" max="32767" attributes="0"/>
+                      <Component id="fac" alignment="0" max="32767" attributes="0"/>
+                      <Component id="fonda" max="32767" attributes="0"/>
+                      <Component id="physique" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="fac" alignment="0" max="32767" attributes="0"/>
-                  <Component id="fonda" max="32767" attributes="0"/>
-                  <Component id="physique" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="masculin" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="feminin" min="-2" pref="34" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -109,11 +150,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="masc" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="masculin" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="feminin" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="fac" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -204,20 +245,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="matricule">
     </Component>
-    <Component class="javax.swing.JRadioButton" name="masc">
-      <Properties>
-        <Property name="text" type="java.lang.String" value=" M"/>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mascMouseClicked"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mascActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="fem">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="F"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JComboBox" name="fac">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -265,6 +292,16 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="masculin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="feminin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="F"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
